@@ -15,7 +15,7 @@ var speech_to_text = watson.speech_to_text({
 
 // Initiate Microphone Instance to Get audio samples
 var mic = require('mic');
-var micInstance = mic({ 'rate': '44100', 'channels': '2', 'debug': false, 'exitOnSilence': 6 });
+var micInstance = mic({ 'rate': '44100', 'channels': '2', 'debug': true, 'exitOnSilence': 6 });
 var micInputStream = micInstance.getAudioStream();
 
 micInputStream.on('data', function(data) {
